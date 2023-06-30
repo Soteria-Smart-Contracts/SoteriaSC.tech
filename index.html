@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MainStyling.css">
+    <link rel="icon" href="Dependancies/Images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>SoteriaSC</title>
+    
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0066eb;
+            margin-bottom: 20vw;
+        }
+        
+        /* Navbar styles */
+        .navbar {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff00;
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .navbar-logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-logo img {
+            margin-right: 10px;
+            width: 72px;
+            height: 72px;
+        }
+        
+        .navbar-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            color: black;
+        }
+        
+        .navbar-menu li {
+            margin-right: 25px;
+            font-size: 22px;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .navbar-menu li:last-child {
+            margin-right: 3vw;
+        }
+        
+        .navbar-menu a {
+            text-decoration: none;
+            color: black;
+        }
+
+        section {
+            text-align: center;
+            margin-top: 150px;
+            padding: 0 20px;
+            padding-left: 20vw;
+            padding-right: 20vw;
+            color: #ffffff;
+            font-family: "Roboto", Arial, sans-serif; /* Updated font family */
+        }
+
+        button {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffffff;
+            color: #0066eb;
+            cursor: pointer;
+        }
+        
+        .navbar-hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Media query for mobile devices */
+        @media screen and (max-width: 600px) {
+            .navbar-menu {
+                display: none;
+            }
+            
+            .navbar-hamburger {
+                display: block;
+            }
+            
+            .navbar-menu.responsive {
+                display: block;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: #f2f2f2;
+                padding: 10px;
+            }
+
+            button {
+                font-size: 24px;
+                font-weight: bold;
+                padding: 10px 20px;
+                margin: 5px;
+                border: none;
+                background-color: #ffffff;
+                color: #0066eb;
+                cursor: pointer;
+            }
+
+            section {
+                text-align: center;
+                margin-top: 50px;
+                padding: 0 20px;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                color: #ffffff;
+                font-family: "Roboto", Arial, sans-serif; /* Updated font family */
+            }
+            
+            .navbar-menu.responsive li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+
+        }
+
+        /* Content section styles */
+        
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffffff;
+            color: #0066eb;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="Logo">
+            <span style="font-size: xx-large; font-weight: bold; margin-top: 2%;">SoteriaSC</span>
+        </div>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Clients</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a target="_blank" href="https://discord.gg/CdQWZtfdKD">Contact</a></li>
+        </ul>
+        <div class="navbar-hamburger" onclick="toggleNavbarMenu()">&#9776;</div>
+    </nav>
+
+    <section>
+        <h1>Welcome to SoteriaSC</h1>
+        <p>We are a blockchain and web3 development firm specialized in creating decentralized applications (dApps), smart contracts, and blockchain solutions.</p>
+        <p>Our team of experienced developers and blockchain experts can help you leverage the power of blockchain technology to transform your business and drive innovation.</p>
+        <p>Whether you are looking to build a custom dApp, implement smart contracts, or integrate blockchain into your existing systems, we have the expertise to deliver high-quality solutions tailored to your needs.</p>
+        <br>
+        <button>What we do</button>
+        <button>Who we work with</button>
+        <button>Who we are</button>
+        <button><a style="text-decoration: none; color: #0066eb;" target="_blank" href="https://discord.gg/CdQWZtfdKD">Contact Us</a></button>
+    </section>
+
+    <script>
+        function toggleNavbarMenu() {
+            var navbarMenu = document.getElementById("navbarMenu");
+            if (navbarMenu.className === "navbar-menu") {
+                navbarMenu.className += " responsive";
+            } else {
+                navbarMenu.className = "navbar-menu";
+            }
+        }
+    </script>
+</body>
+</html>
