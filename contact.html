@@ -8,6 +8,187 @@
     <link rel="icon" href="Dependancies/Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Contact Us</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0066eb, #00c2ff);
+            min-height: 100vh;
+        }
+        
+        /* Navbar styles */
+        .navbar {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff00;
+            padding: 6%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+        }
+        
+        .navbar-logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-logo img {
+            margin-right: 10px;
+            width: 72px;
+            height: 72px;
+        }
+        
+        .navbar-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            color: black;
+        }
+        
+        .navbar-menu li {
+            margin-right: 25px;
+            font-size: 22px;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .navbar-menu li:last-child {
+            margin-right: 3vw;
+        }
+        
+        .navbar-menu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        section {
+            text-align: center;
+            margin-top: 150px;
+            padding: 0 20px;
+            padding-left: 20vw;
+            padding-right: 20vw;
+            color: #ffffff;
+            font-family: "Roboto", Arial, sans-serif; /* Updated font family */
+        }
+
+        button {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffffff;
+            color: black;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        button.last{
+            margin-bottom: 40px;
+        }
+        
+        .navbar-hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .headerimage {
+            position: relative;
+            max-width: 7vw;
+            top: 10px;
+        }
+        
+        .header-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        /* Media query for mobile devices */
+        @media screen and (max-width: 600px) {
+            .navbar-menu {
+                display: none;
+            }
+            
+            .navbar-hamburger {
+                display: block;
+                color: white;
+            }
+
+            .headerimage {
+                position: relative;
+                max-width: 30vw;
+                top: 10px;
+            }
+
+            .header-container {
+                display: block;
+            }
+            
+            .navbar-menu.responsive {
+                display: block;
+                position: absolute;
+                top: 80px;
+                border-radius: 25px;
+                left: 0;
+                right: 0;
+                background-color: black;
+                text-align: center;
+                padding: 10px;
+            }
+
+            button {
+                font-size: 24px;
+                font-weight: bold;
+                padding: 10px 20px;
+                margin: 5px;
+                border: none;
+                background-color: #ffffff;
+                color: black;
+                cursor: pointer;
+            }
+
+            section {
+                text-align: center;
+                margin-top: 50px;
+                padding: 0 20px;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                color: #ffffff;
+                font-family: "Roboto", Arial, sans-serif; /* Updated font family */
+            }
+            
+            .navbar-menu.responsive li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+
+        }
+
+        /* Content section styles */
+        
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
