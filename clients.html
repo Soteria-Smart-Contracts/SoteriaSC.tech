@@ -8,4 +8,212 @@
     <link rel="icon" href="Dependancies/Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Contact Us</title>
-    
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0066eb, #00c2ff);
+            min-height: 100vh;
+        }
+        
+        /* Navbar styles */
+        .navbar {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff00;
+            padding: 6%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+        }
+        
+        .navbar-logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-logo img {
+            margin-right: 10px;
+            width: 72px;
+            height: 72px;
+        }
+        
+        .navbar-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            color: black;
+        }
+        
+        .navbar-menu li {
+            margin-right: 25px;
+            font-size: 22px;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .navbar-menu li:last-child {
+            margin-right: 3vw;
+        }
+        
+        .navbar-menu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        section {
+            text-align: center;
+            margin-top: 150px;
+            padding: 0 20px;
+            padding-left: 20vw;
+            padding-right: 20vw;
+            color: #ffffff;
+            font-family: "Roboto", Arial, sans-serif; /* Updated font family */
+        }
+
+        button {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffffff;
+            color: black;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        button.last{
+            margin-bottom: 40px;
+        }
+        
+        .navbar-hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .headerimage {
+            position: relative;
+            max-width: 7vw;
+            top: 10px;
+        }
+        
+        .header-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        /* Media query for mobile devices */
+        @media screen and (max-width: 600px) {
+            .navbar-menu {
+                display: none;
+            }
+            
+            .navbar-hamburger {
+                display: block;
+                color: white;
+            }
+
+            .headerimage {
+                position: relative;
+                max-width: 30vw;
+                top: 10px;
+            }
+
+            .header-container {
+                display: block;
+            }
+            
+            .navbar-menu.responsive {
+                display: block;
+                position: absolute;
+                top: 80px;
+                border-radius: 25px;
+                left: 0;
+                right: 0;
+                background-color: black;
+                text-align: center;
+                padding: 10px;
+            }
+
+            button {
+                font-size: 24px;
+                font-weight: bold;
+                padding: 10px 20px;
+                margin: 5px;
+                border: none;
+                background-color: #ffffff;
+                color: black;
+                cursor: pointer;
+            }
+
+            section {
+                text-align: center;
+                margin-top: 50px;
+                padding: 0 20px;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                color: #ffffff;
+                font-family: "Roboto", Arial, sans-serif; /* Updated font family */
+            }
+            
+            .navbar-menu.responsive li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+
+        }
+
+        /* Content section styles */
+        
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" style="border: 3px black solid; border-radius: 30px; margin-left: 10px; margin-right: 10px; margin-top: 10px; background-color: black;">
+        <div class="navbar-logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+            <a style="text-decoration: none; color: white;" href="index.html"><span style="font-size: xx-large; font-weight: bold; margin-top: 2%;">SoteriaSC</span></a>
+        </div>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Clients</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">ICDP</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="navbar-hamburger" onclick="toggleNavbarMenu()">&#9776;</div>
+    </nav>
+
+    <section>
+        <h1 style="color:#113088">SoteriaSC</a><a href="index.html"><img width="5%" style="position: relative;" src="logo.png" alt="Logo"><a></h1>
+        <p style="font-weight: bold;">At SoteriaSC, we are diligently crafting a formidable network of exceptionally skilled developers, poised to tackle even the most intricate and pioneering tasks within the realm of blockchain technology.</p>
+        <p style="font-size: larger; line-height: 150%;"> Our mission at SoteriaSC is to relentlessly push the boundaries of innovation within the dynamic sphere of blockchain, with a primary focus on Ethereum Classic and engaging projects across various blockchain ecosystems. In our relentless pursuit of innovation, we are leveraging powerful tools, such as our distinguished Contractor Development Program, to identify and attract emerging talents in the field. <br> <br> By doing so, we assemble a formidable team of visionary leaders who are passionately committed to curating a productive and inspirational workspace for our esteemed clients.
+
+
+            <br> <br>             Our commitment to excellence, combined with our unwavering dedication to fostering creativity and innovation, places SoteriaSC at the forefront of the blockchain development landscape. We stand ready to transform your ambitious ideas into reality, no matter how challenging or groundbreaking they may be. Join us in shaping the future of blockchain technology at SoteriaSC, where innovation knows no bounds.</p>
+    </section>
+
+</body>
+</html>
